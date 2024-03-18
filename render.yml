@@ -6,5 +6,9 @@ services:
 
   - name: client
     type: web
+<<<<<<< HEAD
     buildCommand: cd client && npm install && npm run build
+=======
+    buildCommand: cd server/client && npm install && npm run build
+>>>>>>> 5bf4bfef1e17c1395cd29b081dd6fae0f127d0b6
     startCommand: npx serve -s server/client/build
