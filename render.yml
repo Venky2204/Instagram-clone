@@ -1,0 +1,10 @@
+services:
+  - name: client
+    type: web
+    buildCommand: cd client && npm install && npm run build
+    startCommand: npx serve -s build
+
+  - name: server
+    type: web
+    buildCommand: npm install
+    startCommand: node server.js
